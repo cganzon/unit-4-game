@@ -5,8 +5,8 @@ var clearGem = document.querySelector("#gem1")
 var greenGem = document.querySelector("#gem2")
 var pinkGem = document.querySelector("#gem3")
 var yellowGem = document.querySelector("#gem4")
-// Picks random target number between 20 and 100
-var targetScore = (Math.floor(Math.random() * 81) + 20);
+// Picks random target number between 20 and 120
+var targetScore = (Math.floor(Math.random() * 101) + 20);
 var totalScore = 0;
 $("#targetScore").text(targetScore);
 $("#totalScore").text(totalScore);
@@ -24,7 +24,7 @@ console.log(yellowNumber);
 // Function to update and reset scores
 function update() {
     totalScore = 0;
-    targetScore = (Math.floor(Math.random() * 151) + 50);
+    targetScore = (Math.floor(Math.random() * 101) + 20);
     $("#wins").text(wins);
     $("#losses").text(losses);
     $("#targetScore").text(targetScore);
@@ -103,6 +103,7 @@ $("#gem4").click(function () {
         update();
     }
 });
+
 
 
 
