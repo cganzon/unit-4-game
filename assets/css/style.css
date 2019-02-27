@@ -1,5 +1,6 @@
 body {
     background: url("../images/morocco.png");
+    font-family: 'Coiny', cursive;
 }
 
 img {
@@ -38,7 +39,6 @@ img:hover {
     background: lightblue;
     padding: 20px;
     margin-left: 20px;
-    font-weight: 700;
     border: 2px solid rgb(31, 175, 223);
     border-radius: 20px;
 }
