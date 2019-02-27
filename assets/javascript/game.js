@@ -1,40 +1,42 @@
 // Initialize variables
 var wins = 0;
 var losses = 0;
-var clearGem = document.querySelector("#gem1")
-var greenGem = document.querySelector("#gem2")
-var pinkGem = document.querySelector("#gem3")
-var yellowGem = document.querySelector("#gem4")
-// Picks random target number between 20 and 120
-var targetScore = (Math.floor(Math.random() * 101) + 20);
 var totalScore = 0;
+// Picks random target number between 19 and 120
+var targetScore = randomNumber(19, 120);
 $("#targetScore").text(targetScore);
 $("#totalScore").text(totalScore);
 // Gives each crystal a random number between 1 and 12
-var clearNumber = Math.floor(Math.random() * 12) + 1;
-var greenNumber = Math.floor(Math.random() * 12) + 1;
-var pinkNumber = Math.floor(Math.random() * 12) + 1;
-var yellowNumber = Math.floor(Math.random() * 12) + 1;
+var clearNumber = randomNumber(1, 12);
+var greenNumber = randomNumber(1, 12);
+var pinkNumber = randomNumber(1, 12);
+var yellowNumber = randomNumber(1, 12);
 
 console.log(clearNumber);
-console.log(greenNumber);
+console.log(greenNumber);    //To see values of gems
 console.log(pinkNumber);
 console.log(yellowNumber);
+
+// Function to generate a random number between "a" and "b"
+function randomNumber(a, b) {
+    return Math.floor(Math.random() * (a - b)) + b;
+};
 
 // Function to update and reset scores
 function update() {
     totalScore = 0;
-    targetScore = (Math.floor(Math.random() * 101) + 20);
+    targetScore = randomNumber(19, 120);
     $("#wins").text(wins);
     $("#losses").text(losses);
     $("#targetScore").text(targetScore);
     $("#totalScore").text(totalScore);
-    clearNumber = Math.floor(Math.random() * 12) + 1;
-    greenNumber = Math.floor(Math.random() * 12) + 1;
-    pinkNumber = Math.floor(Math.random() * 12) + 1;
-    yellowNumber = Math.floor(Math.random() * 12) + 1;
+    clearNumber = randomNumber(1, 12);
+    greenNumber = randomNumber(1, 12);
+    pinkNumber = randomNumber(1, 12);
+    yellowNumber = randomNumber(1, 12);
+
     console.log("New values are: ")
-    console.log(clearNumber);
+    console.log(clearNumber);        //To see new values of gems
     console.log(greenNumber);
     console.log(pinkNumber);
     console.log(yellowNumber);

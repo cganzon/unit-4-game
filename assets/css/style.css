@@ -1,26 +1,53 @@
 body {
-    background: lightgray;
+    background: url("../images/morocco.png");
 }
 
 img {
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 50px 20px 0 20px;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.targetBox {
+    font-size: 30px;
 }
 
 #title {
-    background: lightblue;
+    background: rgb(31, 175, 223);
     text-align: center;
+    color: white;
     padding: 10px 0 10px 0;
 }
 
 #instructions {
+    background: lightblue;
     padding: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+    border: 2px solid rgb(31, 175, 223);
+    border-radius: 20px;
 }
 
 #scores {
     text-align: center;
-    padding: 20px;
     background: white;
-    margin: 20px 50px 20px 20px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgb(31, 175, 223);
     border-radius: 20px;
-
 }
